@@ -1,3 +1,4 @@
+#import requests
 import streamlit as st
 from bs4 import BeautifulSoup
 import urllib.request
@@ -9,7 +10,10 @@ results = soup.get_text()
 lista = results.split()
 print(lista)
 indexes = []
-country = "[ES]"
+
+st.title("Pokémon WCS'22 records by country")
+st.markdown("Data from [RK9 Labs](https://rk9.gg/pairings/worlds-2022-vgc#P2). Developed with :heart: by [@miniherrera11](https://twitter.com/miniherrera11).")
+country = st.text_input("Write the tag (e.g.: [ES])")
 
 for i in range(len(lista)):
     if lista[i] == country:
@@ -21,8 +25,6 @@ partidas = []
 
 data = list(set(data))
 
-st.title("Españoles en Pokémon WCS'22")
-st.markdown(r"### por Carlos Herrera [(@miniherrera11)](https://twitter.com/miniherrera11)")
 
 datos_buenos = []
 records = []
