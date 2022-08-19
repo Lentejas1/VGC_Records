@@ -22,6 +22,7 @@ partidas = []
 data = list(set(data))
 
 st.title("Españoles en Pokémon WCS'22")
+st.markdown(r"por carlos Herrera (@miniherrera11)")
 
 datos_buenos = []
 records = []
