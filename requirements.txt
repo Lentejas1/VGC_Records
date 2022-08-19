@@ -1,4 +1,5 @@
-urllib
 streamlit
 bs4
-requests
+bs4.BeautifulSoup
+urllib
+urllib.request
