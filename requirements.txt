@@ -1,4 +1,2 @@
 streamlit
 bs4
-urllib
-urllib.request
