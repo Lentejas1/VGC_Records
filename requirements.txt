@@ -1,3 +1,3 @@
 streamlit
-BeautifulSoup
+bs4
 urllib.request
