@@ -8,7 +8,6 @@ soup = BeautifulSoup(html, "html.parser")
 
 results = soup.get_text()
 lista = results.split()
-print(lista)
 indexes = []
 
 st.title("Pokémon WCS'22 records by country")
@@ -33,8 +32,7 @@ for num in indexes:
     jugadores.append(lista[num - 2] + " " + lista[num - 1])
 
 jugadores_unique = list(set(jugadores))
-print(jugadores_unique)
-print(datos_buenos)
+
 for jugador in jugadores_unique:
     lista_ind = []
     for i in range(len(jugadores)):
