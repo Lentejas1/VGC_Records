@@ -7,7 +7,7 @@ st.markdown("Data from [RK9 Labs](https://rk9.gg/). Developed with :heart: by [@
 
 URL = "https://rk9.gg/pairings/worlds-2022-open-vgc"
 st.markdown(f"**Default tournament displayed: {URL}**")
-checkbox = st.checkbox("To choose another one, please enable this next checkbox and paste the pairings' link from RK9 Labs below.")
+checkbox = st.checkbox("To choose another one, please enable this checkbox and paste the pairings' link from RK9 Labs below.")
 
 if checkbox:
     url = st.text_input("Paste it here")
