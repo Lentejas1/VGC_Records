@@ -2,7 +2,7 @@
 import streamlit as st
 from bs4 import BeautifulSoup
 import urllib.request
-URL = "https://rk9.gg/pairings/worlds-2022-vgc#P2"
+URL = "https://rk9.gg/pairings/worlds-2022-open-vgc"
 html = urllib.request.urlopen(URL).read()
 soup = BeautifulSoup(html, "html.parser")
 
