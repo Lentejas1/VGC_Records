@@ -2,11 +2,11 @@ import streamlit as st
 from bs4 import BeautifulSoup
 import urllib.request
 
-st.title("Pokémon VGC records by country")
+st.title("Pokémon VGC/TCG records by country")
 st.markdown(
     "Data from [RK9 Labs](https://rk9.gg/). Developed with :heart: by [@miniherrera11](https://twitter.com/miniherrera11).")
 
-URL = "https://rk9.gg/pairings/worlds-2022-open-vgc"
+URL = "https://rk9.gg/pairings/EU2c3yZHykN4AQ65OTBz"
 st.markdown(f"**Default tournament displayed: {URL}**")
 checkbox = st.checkbox(
     "To choose another one, please enable this checkbox and paste the pairings' link from RK9 Labs below.")
