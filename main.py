@@ -7,9 +7,15 @@ st.markdown(
     "Data from [RK9 Labs](https://rk9.gg/). Developed with :heart: by [@miniherrera11](https://twitter.com/miniherrera11).")
 
 URL = "https://rk9.gg/pairings/EU2c3yZHykN4AQ65OTBz"
-st.markdown(f"**Default tournament displayed: {URL}**")
+URL_TCG = "https://rk9.gg/pairings/EU1JAGakQchQDKq2qVId"
+st.markdown(f"**Default tournament displayed: EUIC'23**")
+
+TCG_checkbox = st.checkbox(
+    "To choose TCG, please enable this checkbox. Otherwise, VGC is displayed.")
+
+
 checkbox = st.checkbox(
-    "To choose another one, please enable this checkbox and paste the pairings' link from RK9 Labs below.")
+    "To choose another tournament, please enable this checkbox and paste the pairings' link from RK9 Labs below.")
 
 if checkbox:
     url = st.text_input("Paste it here")
@@ -17,6 +23,12 @@ if checkbox:
         pass
     else:
         URL = url
+
+if TCG_checkbox:
+    if len(url) == 0:
+        pass
+    else:
+        URL = URL_TCG
 
 country = st.text_input("Write the tag (e.g.: '[ES]')")
 
