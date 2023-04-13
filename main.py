@@ -25,10 +25,7 @@ if checkbox:
         URL = url
 
 if TCG_checkbox:
-    if len(url) == 0:
-        pass
-    else:
-        URL = URL_TCG
+    URL = URL_TCG
 
 country = st.text_input("Write the tag (e.g.: '[ES]')")
 
