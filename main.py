@@ -6,9 +6,9 @@ st.title("Pokémon VGC/TCG records by country")
 st.markdown(
     "Data from [RK9 Labs](https://rk9.gg/). Developed with :heart: by [@miniherrera11](https://twitter.com/miniherrera11).")
 
-URL = "https://rk9.gg/pairings/EU2c3yZHykN4AQ65OTBz"
-URL_TCG = "https://rk9.gg/pairings/EU1JAGakQchQDKq2qVId"
-st.markdown(f"**Default tournament displayed: EUIC'23**")
+URL = "https://rk9.gg/pairings/NA2MV6cHdbdqvXWs7HAa"
+URL_TCG = "https://rk9.gg/pairings/NA1KYsUUz7fBID8XkZHZ"
+st.markdown(f"**Default tournament displayed: NAIC'23**")
 
 TCG_checkbox = st.checkbox(
     "To choose TCG, please enable this checkbox. Otherwise, VGC is displayed.")
