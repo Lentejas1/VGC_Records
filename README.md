@@ -4,4 +4,4 @@ Herramienta con la que ver los resultados en un torneo de VGC determinado de tod
 
 Tool you can dive into real-time VGC tournament records of a chosen country with.
 
-[https://lentejas1-vgc-records-main-x631ba.streamlit.app/](It's here.)
+It's here: https://lentejas1-vgc-records-main-x631ba.streamlit.app/
